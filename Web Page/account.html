@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Account</title>
+    <link
+      rel="shortcut icon"
+      type="x-icon"
+      href="media/5e4a1bb97ef9d0dda07621179eec4546.jpg"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="body-2">
+    <div class="header">
+      <nav>
+        <div class="logo">
+          <a href="index.html">
+            <img src="media/5e4a1bb97ef9d0dda07621179eec4546.jpg" alt=""
+          /></a>
+          <div class="headings">
+            <h2>INDIAN RAILWAYS</h2>
+            <p>LIFE LINE TO THE NATION</p>
+          </div>
+        </div>
+        <div class="navbar">
+          <ul class="navList"></ul>
+        </div>
+      </nav>
+    </div>
+    <div class="wrapper">
+      <div class="logincredits">
+        <h4>Login</h4>
+        <div class="userpg2 flex">
+          <label for="usernamep2" class="usernamelabel">username :</label>
+          <input
+            type="text"
+            class="usernameInputp2"
+            placeholder="username@ac.in"
+            id="usernamep2"
+          />
+        </div>
+        <div class="pass flex">
+          <label for="pass" class="passlabel">password :</label>
+          <input
+            type="password"
+            class="passinput"
+            placeholder="*********"
+            id="pass"
+          />
+        </div>
+        <div class="submit">
+          <button class="submitbtn loginbtn">
+            <a href="" class="link">Submit</a>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+      const username2 = document.querySelector("#usernamep2");
+      const pass = document.querySelector("#pass");
+      let link = document.querySelector(".link");
+      const subbtn = document.querySelector("button");
+      subbtn.addEventListener("click", () => {
+        if (!username2.value && !pass.value) {
+          // document.querySelector("button").disabled = true;
+          link.setAttribute("href", "#");
+        } else {
+          // document.querySelector("button").disabled = false;
+          link.setAttribute("href", "final.html");
+        }
+      });
+    </script>
+  </body>
+</html>
